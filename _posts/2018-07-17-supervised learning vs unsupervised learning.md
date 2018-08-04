@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Supervised learning vs Unsupervised learning
-permalink: /posts/
-
+title:  "Supervised learning vs Unsupervised learning"
+date:   2017-07-17 08:00:00
+author: shwksl101
+categories: Machine Learning
 ---
 
 지도학습과 비지도학습의 정의, 그리고 그 차이에 대해서 알아보고자 합니다.  
