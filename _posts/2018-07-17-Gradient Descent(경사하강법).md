@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Gradient Descent(경사하강법)
+permalink: /posts/
+
 ---
 
 비용함수 j의 최솟값을 구하라!
