@@ -107,5 +107,5 @@ protocols:
     os_rcs_type: "git"
     os_src: "git@github.com:bencentra/centrarium.com.git"
 
-disqus_url: shwksl101.disqus.come
+disqus_url: shwksl101.disqus.com
 disqus_id: shwksl101
