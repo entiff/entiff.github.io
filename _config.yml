@@ -21,7 +21,7 @@ description: >
 baseurl: "/shwksl101.github.io" # the subpath of your site, e.g. /blog/
 url: "http://shwksl101.github.io" # the base hostname & protocol for your site
 cover: "/assets/kuta.png"
-logo: "/assets/dubrovnik.jpg"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
