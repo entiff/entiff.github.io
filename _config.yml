@@ -20,7 +20,7 @@ description: >
 # root of your server.
 baseurl: "/shwksl101.github.io" # the subpath of your site, e.g. /blog/
 url: "http://shwksl101.github.io" # the base hostname & protocol for your site
-cover: "/assets/kuta.png"
+cover: "/assets/matterhorn.jpg"
 logo: "/assets/logo2.png"
 
 # Build settings
