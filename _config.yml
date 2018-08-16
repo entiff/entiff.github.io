@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Akry
+title: Zani's blog
 subtitle: "text mining"
 email: shwksl101@naver.com
 name: Tae Hee Kim
@@ -20,8 +20,8 @@ description: >
 # root of your server.
 baseurl: "/shwksl101.github.io" # the subpath of your site, e.g. /blog/
 url: "http://shwksl101.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+cover: "/assets/kuta.png"
+logo: "/assets/dubrovnik.jpg"
 
 # Build settings
 markdown: kramdown
