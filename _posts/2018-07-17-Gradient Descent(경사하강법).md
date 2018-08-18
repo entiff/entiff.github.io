@@ -3,7 +3,7 @@ layout: post
 title:  "Gradient Descent(경사하강법)"
 date:   2017-07-17 08:00:00
 author: shwksl101
-categories: Machine Learning
+categories: Machine_Learning
 ---
 
 비용함수 j의 최솟값을 구하라!
