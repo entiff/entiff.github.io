@@ -11,7 +11,7 @@ categories: Machine_Learning
 
 지도학습은 알고리즘에게 정확한 답을 알고 있는 데이터 셋을 줍니다.  
 
-![주택가격](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/주택가격.png "주택가격")
+![default](https://user-images.githubusercontent.com/25002275/44298752-b0313d80-a323-11e8-97f6-00739a16f6c5.PNG "주택가격")
 
 위 그림은 주택 가격 예측 그래프입니다. 여기서 지도 학습은 학습 알고리즘에 실제 데이터를 알려줍니다.  
 다시 말해, 주택 넓이에 대한 가격의 예시 데이터를 알고리즘에게 알려주는 것입니다.  
@@ -19,7 +19,7 @@ categories: Machine_Learning
 
 이러한 문제는 regression(회귀) 문제로 볼 수 있습니다. 이산적으로 주어진 데이터에서 연속적인 값을 예측하고자 하기 때문입니다.  
 
-![악성종양](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/악성종양.png "악성종양")
+![default](https://user-images.githubusercontent.com/25002275/44298756-cc34df00-a323-11e8-80f6-e48c5520c156.PNG "악성종양")
 
 위 그림은 유방의 종양 크기에 따라 악성 종양 여부를 나타낸 그림입니다. 파란색은 양성 종양, 빨간색은 악성 종양입니다.  
 
@@ -45,8 +45,8 @@ classification에서는 input variables를 discrete categories에 mapping합니�
 
 앞선 예시를 들어 supervised learning과 unsupervised learning을 비교해보겠습니다.  
 
-![supervisedlearning](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/지도학습.png "supervised learning")
-![unsupervisedlearning](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/비지도학습.PNG "unsupervised learning")
+![default](https://user-images.githubusercontent.com/25002275/44298758-d7880a80-a323-11e8-9082-8b41d752f422.PNG "supervised learning")
+![default](https://user-images.githubusercontent.com/25002275/44298759-e078dc00-a323-11e8-8174-c72f12186f5c.PNG) "unsupervised learning")
 
 supervised learning에서는 위와 같이 어느 데이터가 악성 종양인지 양성 종양인지를 알려줍니다.  
 반면 unsupervised learning에서는 악성인지 양성인지에 대한 정보를 제공하지 않습니다.  
