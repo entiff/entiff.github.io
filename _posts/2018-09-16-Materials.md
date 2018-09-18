@@ -18,12 +18,12 @@ categories: etc
 * [Stat110(English)](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=1)
 
 #### Linear Algebra
-* [Gilbert Strang Linear Algebra(English)](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PLE7DDD91010BC51F8&index=1)
 * [한양대 이상화 교수님 선형대수](https://www.youtube.com/playlist?list=PLSN_PltQeOyjDGSghAf92VhdMBeaLZWR3)
+* [Gilbert Strang Linear Algebra(English)](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PLE7DDD91010BC51F8&index=1)
 
 #### Data structure & Algorithm
-* [문일철 교수님의 자료구조 및 알고리즘 개론](http://kooc.kaist.ac.kr/intro-data-and-algo-2018/joinLectures/14730)
 * [백준 알고리즘](https://www.acmicpc.net/)
+* [문일철 교수님의 자료구조 및 알고리즘 개론](http://kooc.kaist.ac.kr/intro-data-and-algo-2018/joinLectures/14730)
 
 #### Machine Learning
 * [Andrew Ng(Coursera) Machine Learning(English)](https://www.coursera.org/learn/machine-learning/home/welcome)
