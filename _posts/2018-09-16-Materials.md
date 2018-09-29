@@ -43,7 +43,7 @@ categories: etc
 * [Google Cloud Platform(English)](https://www.coursera.org/learn/serverless-machine-learning-gcp/lecture/jghRx/welcome-to-the-course)
 
 #### git
-* [지옥에서 온 git](https://opentutorials.org/course/2708)
+* [생활코딩의 지옥에서 온 git](https://opentutorials.org/course/2708)
 
 #### Pytorch
-* [김성훈 교수님의 Pytorch Zero to All](https://www.youtube.com/watch?v=SKq-pmkekTk&list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
+* [김성훈 교수님의 Pytorch Zero to All(English)](https://www.youtube.com/watch?v=SKq-pmkekTk&list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
