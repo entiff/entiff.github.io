@@ -33,7 +33,7 @@ categories: etc
 * [김성훈 교수님의 모두의 딥러닝](https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm)
 * [최성준님의 논문으로 시작하는 딥러닝](https://www.edwith.org/deeplearningchoi)
 * [PR12 딥러닝 논문 읽기 모임](https://www.youtube.com/watch?v=auKdde7Anr8&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS)
-* [Deep Learning from scratch(밑바닥부터 시작하는 딥러닝)]
+* Deep Learning from scratch(밑바닥부터 시작하는 딥러닝)
 
 #### NLP
 * [조경현 교수님의 NLP with DeepLearning](https://www.edwith.org/deepnlp)
