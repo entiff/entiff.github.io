@@ -10,6 +10,10 @@ categories: etc
 많은 분들께 도움이 되었으면 합니다.  
 다른 좋은 자료나 링크가 있다면 댓글로 남겨주세요. 감사합니다.
 
+#### Community
+* [Tensorflow-Korea](https://www.facebook.com/groups/TensorFlowKR/)
+* [PocektCluster](https://blog.pocketcluster.io/)
+
 #### Python
 * [코딩도장(Python)](https://dojang.io/course/view.php?id=3)
 
@@ -34,11 +38,13 @@ categories: etc
 * [최성준님의 논문으로 시작하는 딥러닝](https://www.edwith.org/deeplearningchoi)
 * [PR12 딥러닝 논문 읽기 모임](https://www.youtube.com/watch?v=auKdde7Anr8&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS)
 * Deep Learning from scratch(밑바닥부터 시작하는 딥러닝)
+* [DeepLearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w)
 
 #### NLP
 * [조경현 교수님의 NLP with DeepLearning](https://www.edwith.org/deepnlp)
 * [주재걸 교수님의 NLP](https://www.youtube.com/watch?v=S0mOsBlJ2TE&list=PLep-kTP3NkcPqughb3SOLiSqza_koBewh)
 * [CS224n(English)](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
+* [한국어 NLP 프로젝트](https://github.com/datanada/Awesome-Korean-NLP)
 
 #### Cloud
 * [Google Cloud Platform(English)](https://www.coursera.org/learn/serverless-machine-learning-gcp/lecture/jghRx/welcome-to-the-course)
