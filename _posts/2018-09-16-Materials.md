@@ -39,12 +39,14 @@ categories: etc
 * [PR12 딥러닝 논문 읽기 모임](https://www.youtube.com/watch?v=auKdde7Anr8&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS)
 * Deep Learning from scratch(밑바닥부터 시작하는 딥러닝)
 * [DeepLearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w)
+* [Deeplearningbook](https://www.deeplearningbook.org/)
 
 #### NLP
 * [조경현 교수님의 NLP with DeepLearning](https://www.edwith.org/deepnlp)
 * [주재걸 교수님의 NLP](https://www.youtube.com/watch?v=S0mOsBlJ2TE&list=PLep-kTP3NkcPqughb3SOLiSqza_koBewh)
 * [CS224n(English)](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 * [한국어 NLP 프로젝트](https://github.com/datanada/Awesome-Korean-NLP)
+* [CMU Neural Nets for NLP 2018(English)](https://www.youtube.com/watch?v=Q3Y1t9-O3M0&list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE)
 
 #### Cloud
 * [Google Cloud Platform(English)](https://www.coursera.org/learn/serverless-machine-learning-gcp/lecture/jghRx/welcome-to-the-course)
