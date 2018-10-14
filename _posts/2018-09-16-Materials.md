@@ -54,5 +54,12 @@ categories: etc
 #### git
 * [생활코딩의 지옥에서 온 git](https://opentutorials.org/course/2708)
 
+#### Tensorflow
+
+* [Tensorflow tutorial](https://www.tensorflow.org/tutorials/)
+* [3분 딥러닝 텐서플로맛](https://github.com/golbin/TensorFlow-Tutorials)
+
 #### Pytorch
+
+* [Pytorch tutorial](http://pytorch.kr/index.html)
 * [김성훈 교수님의 Pytorch Zero to All(English)](https://www.youtube.com/watch?v=SKq-pmkekTk&list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m)
