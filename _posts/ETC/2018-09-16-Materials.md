@@ -19,7 +19,7 @@ categories: etc
 
 #### Probability
 * [이상화 교수님의 확률 및 통계](https://www.youtube.com/watch?v=2ewO_6msPbA&feature=youtu.be)
-* [Stat110(English)](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=1)
+* [Stat110(English)](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=1)[한글](https://www.edwith.org/harvardprobability)
 
 #### Linear Algebra
 * [한양대 이상화 교수님 선형대수](https://www.youtube.com/playlist?list=PLSN_PltQeOyjDGSghAf92VhdMBeaLZWR3)
@@ -38,7 +38,7 @@ categories: etc
 * [최성준님의 논문으로 시작하는 딥러닝](https://www.edwith.org/deeplearningchoi)
 * [PR12 딥러닝 논문 읽기 모임](https://www.youtube.com/watch?v=auKdde7Anr8&list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS)
 * Deep Learning from scratch(밑바닥부터 시작하는 딥러닝)
-* [DeepLearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w)
+* [DeepLearning.ai](https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w)[한글](https://www.edwith.org/deeplearningai1)
 * [Deeplearningbook](https://www.deeplearningbook.org/)
 
 #### NLP
