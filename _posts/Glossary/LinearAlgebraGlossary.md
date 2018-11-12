@@ -14,20 +14,20 @@ categories: Glossary
 
 피드백은 언제나 환영입니다.
 
-# Linear Algebra
+## Linear Algebra
 
-## 1. Eigen Vector, Eigen Value
+### 1. Eigen Vector, Eigen Value
 
-## 2. Singular Value Decomposition(SVD)
+### 2. Singular Value Decomposition(SVD)
 
-## 3. Variational Inference
+### 3. Variational Inference
 
-## 4. KL Divergence
+### 4. KL Divergence
 
-## 5. Jensen's Inequality
+### 5. Jensen's Inequality
 
-## 6. Hadmard Product
+### 6. Hadmard Product
 
-## 7. Inner Product(내적)
+### 7. Inner Product(내적)
 
-## 8. Outer Product(외적)
+### 8. Outer Product(외적)
