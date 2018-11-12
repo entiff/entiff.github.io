@@ -43,8 +43,6 @@ $$-\frac { 1 }{ m } [\sum _{ i=1 }^{ m }{ { y }^{ (i) }log{ h }_{ \theta  }({ x 
 
 ### 3. Support Vector Machine(SVM)
 
-![Support Vector Machine](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IQUL_6FPoOQEzmwZBhX2JAhAokXfdJ_9te01U2qE2sNEBoTMAA){: width="200" height="300"}
-
 ![Cost function of SVM](http://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20[12].png)
 
 $$C\sum _{ i=1 }^{ m }{ [{ y }^{ (i) }{ cost }_{ 1 }({ \theta  }^{ T }{ x }^{ (i) })+(1-{ y }^{ (i) }{ cost }_{ 0 }{ \theta  }^{ T }{ x }^{ (i) })]\quad +\quad \frac { 1 }{ 2 } \sum _{ i=1 }^{ n }{ { \theta  }_{ j }^{ 2 } }  } $$
@@ -73,6 +71,7 @@ $${ f }_{ i } = similarity(x,{ l }^{ (i) }) = exp(\frac { \left\| x-{ l }^{ (i) 
 * Concept Note
  - Dirichlet Distribution
  - truncked SVD
+
 ### 9. Naive Bayes
 
 ### 10. Boosting
