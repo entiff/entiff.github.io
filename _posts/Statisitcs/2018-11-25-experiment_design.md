@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "A/B test(A/B 테스트)"
-date:   2018-11-03 24:00:00
+title:  "A/B 테스트와 실험설계(Experiment Design)"
+date:   2018-11-25 21:00:00
 author: 김태희
-categories: Glossary
+categories: Statistics
 ---
 
 오늘은 A/B 테스트 즉, _실험 설계(Experiment Design)_ 에 대한 이야기를 해볼까 합니다. 실험은 인과관계를 증명할 수 있는 유일한 방법입니다. 그러나 설계가 매우 까다롭습니다. 복잡한 행동을 측정하기 어렵고, 수많은 오염변인과 통제변인을 고려하기가 어렵습니다. 그럼에도 많은 분야에서 과학적 분석방법으로 널리 사용되고 있습니다. 이번 글은 David W. Martin의 'Doing Psychology Experiments(심리학 실험법)'를 참고했습니다.
