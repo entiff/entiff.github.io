@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Entiff
+title: Entiff's blog
 subtitle: "Machine Learning, NLP"
 email: shwksl101@naver.com
 name: Tae Hee Kim
