@@ -2,7 +2,7 @@
 layout: post
 title:  "A/B 테스트와 실험설계(Experimental Design)"
 date:   2018-11-25 21:00:00
-author: 김태희
+author: entiff
 categories: Statistics
 ---
 

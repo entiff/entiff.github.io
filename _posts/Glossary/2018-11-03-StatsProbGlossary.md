@@ -2,7 +2,7 @@
 layout: post
 title:  "통계 및 확률 용어 모음(Statistics & Probability Glossary)"
 date:   2018-11-03 24:00:00
-author: 김태희
+author: entiff
 categories: Glossary
 ---
 

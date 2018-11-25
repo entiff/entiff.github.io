@@ -2,7 +2,7 @@
 layout: post
 title:  "선형대수학 용어 모음(Linear Algebra Glossary)"
 date:   2018-11-02 13:00:00
-author: 김태희
+author: entiff
 categories: Glossary
 ---
 

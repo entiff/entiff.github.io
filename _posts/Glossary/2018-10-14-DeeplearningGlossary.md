@@ -2,7 +2,7 @@
 layout: post
 title:  "딥러닝 용어 모음(Deep Learning Glossary)"
 date:   2018-10-14 12:00:00
-author: 김태희
+author: entiff
 categories: Glossary
 ---
 

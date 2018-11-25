@@ -2,7 +2,7 @@
 layout: post
 title:  "머신러닝 용어 모음(Machine Learning Glossary)"
 date:   2018-11-01 22:00:00
-author: 김태희
+author: entiff
 categories: Glossary
 ---
 

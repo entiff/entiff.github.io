@@ -2,7 +2,7 @@
 layout: post
 title:  "머신러닝 공부 자료 모음"
 date:   2018-09-16 16:00:00
-author: 김태희
+author: entiff
 categories: etc
 ---
 

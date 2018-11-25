@@ -2,7 +2,7 @@
 layout: post
 title:  "tensorflowKR 자료 모음"
 date:   2018-10-10 12:00:00
-author: 김태희
+author: entiff
 categories: etc
 ---
 
