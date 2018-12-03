@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "파이썬 아나콘다(Anaconda) 기본 명령어"
+date:   2018-12-04 21:00:00
+author: entiff
+categories: Python
+---
+
+아나콘다는 Python과 R 기반의 오픈소스를 모아놓은 개발 플랫폼입니다.
+가상환경과 패키지를 쉽게 관리할 수 있습니다.
+
+프로젝트를 하다보면 특정 버전의 라이브러리를 사용해야 하는 경우가 생깁니다. 이때 가상환경 관리자로 각 프로젝트별 개발 환경을 효율적으로 구성하고 관리할 수 있습니다.
+
+패키지 역시 의존성 문제로 일일이 설치할 필요가 없습니다.
+
+- 아나콘다 버전 확인
+conda --version
+
+- 아나콘다 업데이트
+
+conda update conda
+
+- 아나콘다 가상환경 생성
+
+conda crate --name [가상환경 이름] [설치할 패키지]
+
+ex) conda create --name entiff numpy
+
+- 생성한 가상환경 리스트 확인
+
+conda info --envs
+
+- 가상환경 활성화
+
+activate [가상환경 이름]
+
+ex) activate entiff
+
+- 가상환경 비활성화
+
+deactivate [가상환경 이름]
+
+ex) deactivate entiff
+
+- 패키지 설치
+
+conda install [패키지 이름]
+
+ex) conda install numpy
+
+- 패키지 리스트 확인
+
+conda list
+
+- 패키지 삭제
+
+conda remove --name [가상환경 이름] --all
+
+- 아나콘다 캐시 삭제
+
+conda clean --all
