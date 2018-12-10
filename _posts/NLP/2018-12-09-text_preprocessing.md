@@ -8,7 +8,7 @@ categories: NLP
 
 오늘은 텍스트 전처리를 이야기 해보고자 합니다. 텍스트 자체는 컴퓨터가 이해할 수 있는 방식이 아니기 때문에 모델에 넣고 연산할 수 있도록 몇가지 작업을 해야 합니다. 최근 참여하고 있는 Kaggle challenge인 Quora 텍스트 자료를 이용해 소개하겠습니다. [Quora challenge](https://www.kaggle.com/c/quora-insincere-questions-classification)는 quora의 질문을 sincere question과 insincere question으로 분류하는 과제입니다.
 
-우선 필요한 패키지를 import 합니다.
+우선 필요한 패키지를 `import` 합니다.
 
 ~~~
 import spacy
@@ -102,7 +102,7 @@ def build_vocab(sentences, verbose = True):
     return vocab
 ~~~
 
-띄어쓰기를 기준으로 단어를 구분해 vocab을 생성합니다. 위에서 각 토큰을 띄어쓰기 기준으로 .join했기 때문에 split()으로 단어를 구분합니다.
+띄어쓰기를 기준으로 단어를 구분해 vocab을 생성합니다. 위에서 각 토큰을 띄어쓰기 기준으로 `.join` 했기 때문에 `split()` 으로 단어를 구분합니다.
 
 ~~~
 # 각 문장을 띄어쓰기 기준으로 잘라서 sentences에 넣기
@@ -116,8 +116,8 @@ print({k: vocab[k] for k in list(vocab)[:5]})
 >>> {'how': 302704, 'do': 345489, 'quebec': 174, 'nationalist': 286, 'see': 15920}
 ~~~
 
-모든 문장의 길이는 가장 긴 문장과 동일합니다. 빈 단어는 <PAD>로 채우고 처음 본 단어는 <UNK>로 채웁니다.
-이를 위해 <PAD>와 <UNK>를 추가합니다.
+모든 문장의 길이는 가장 긴 문장과 동일합니다. 빈 단어는 `<PAD>`로 채우고 처음 본 단어는 `<UNK>`로 채웁니다.
+이를 위해 `<PAD>`와 `<UNK>`를 word2ix에 추가합니다.
 ~~~
 word2ix = {"<PAD>":0, "<UNK>":1}
 
@@ -211,7 +211,7 @@ with open("quora_data.pickle", "wb") as f:
     pickle.dump(save_data, f)
 ~~~
 
-pickle 데이터를 불러올 때는 pickle.load를 이용하고 딕셔너리 key를 이용해 불러옵니다.
+pickle 데이터를 불러올 때는 `pickle.load`를 이용하고 딕셔너리 key를 이용해 불러옵니다.
 
 ~~~
 with open("quora_data.pickle", "rb") as f:
