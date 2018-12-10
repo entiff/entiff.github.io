@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "영어 텍스트 전처리하기"
+title:  "영어 텍스트 전처리하기(English text preprocessing)"
 date:   2018-12-09 21:00:00
 author: entiff
-categories: Python
+categories: NLP
 ---
 
 오늘은 텍스트 전처리를 이야기 해보고자 합니다. 텍스트 자체는 컴퓨터가 이해할 수 있는 방식이 아니기 때문에 모델에 넣고 연산할 수 있도록 몇가지 작업을 해야 합니다. 최근 참여하고 있는 Kaggle challenge인 Quora 텍스트 자료를 이용해 소개하겠습니다. [Quora challenge](https://www.kaggle.com/c/quora-insincere-questions-classification)는 quora의 질문을 sincere question과 insincere question으로 분류하는 과제입니다.
