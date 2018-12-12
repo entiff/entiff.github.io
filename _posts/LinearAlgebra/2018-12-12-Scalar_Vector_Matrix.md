@@ -14,7 +14,7 @@ Scalar(스칼라)는 크기만 있고 방향을 가지지 않는 양입니다. �
 
 대조적으로 Vector(벡터)는 크기와 방향이 모두 있습니다. 선형대수학에서는 이를 `nx1`행렬 또는 `1xn`행렬로 나타내고 각각을 열벡터와 행벡터로 부르기도 합니다. 방향을 나타내기 때문에 벡터 표현에 화살표를 이용할 수 있습니다.
 
-$$**x**\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad \in \quad { R }^{ n }$$
+$$x\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad \in \quad { R }^{ n }$$
 
 ### 벡터의 Inner product(내적)
 
@@ -54,11 +54,11 @@ $$A\quad =\quad \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}\in \quad {
 
 행벡터는 주로 transpose(전치)를 이용해 표현합니다.
 
-$$**x**^{ T }\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad =\quad \begin{pmatrix} x_{ 1 } & x_{ 2 } & \cdots  & x_{ n } \end{pmatrix}\in \quad { R }^{ 1xn }$$
+$$x^{ T }\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad =\quad \begin{pmatrix} x_{ 1 } & x_{ 2 } & \cdots  & x_{ n } \end{pmatrix}\in \quad { R }^{ 1xn }$$
 
 행과 열의 개수가 같은 경우 Square matrix(정방행렬), 다른 경우 Rectangular matrix(직사각행렬)라 합니다.
 
-${ A }_{ ij }$로 행렬의 요소에 접근합니다. 여기서 ${ A }_{ 2,1 }$은 3입니다.
+$${ A }_{ ij }$$로 행렬의 요소에 접근합니다. 여기서 $${ A }_{ 2,1 }$$은 3입니다.
 
 ### 행렬의 덧셈
 
