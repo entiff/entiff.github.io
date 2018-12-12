@@ -80,6 +80,6 @@ $$aA\quad =\quad 2\begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}\quad =\q
 
 $$A\quad =\quad \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}\quad B\quad =\quad \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}$$
 
-$$A\cdot B\quad =\quad \begin{pmatrix} A_{ 1 }_{ 1 }\cdot B_{ 1 }_{ 1 }+A_{ 1 }_{ 2 }\cdot B_{ 2 }_{ 1 }+A_{ 1 }_{ 3 }\cdot B_{ 3 }_{ 1 }, & A_{ 1 }_{ 1 }\cdot B_{ 1 }_{ 2 }+A_{ 1 }_{ 2 }\cdot B_{ 2 }_{ 2 }+A_{ 1 }_{ 3 }\cdot B_{ 3 }_{ 2 } \\ A_{ 2 }_{ 1 }\cdot B_{ 1 }_{ 1 }+A_{ 2 }_{ 2 }\cdot B_{ 2 }_{ 1 }+A_{ 2 }_{ 3 }\cdot B_{ 3 }_{ 1 }, & A_{ 2 }_{ 1 }\cdot B_{ 1 }_{ 2 }+A_{ 2 }_{ 2 }\cdot B_{ 2 }_{ 2 }+A_{ 2 }_{ 3 }\cdot B_{ 3 }_{ 2 } \end{pmatrix}$$
+$$A\cdot B\quad =\quad \begin{pmatrix} A_{ 1 }_{ 1 }\cdot B_{ 1 }_{ 1 }+A_{ 1 }_{ 2 }\cdot B_{ 2 }_{ 1 }+A_{ 1 }_{ 3 }\cdot B_{ 3 }_{ 1 }\quad  & A_{ 1 }_{ 1 }\cdot B_{ 1 }_{ 2 }+A_{ 1 }_{ 2 }\cdot B_{ 2 }_{ 2 }+A_{ 1 }_{ 3 }\cdot B_{ 3 }_{ 2 } \\ A_{ 2 }_{ 1 }\cdot B_{ 1 }_{ 1 }+A_{ 2 }_{ 2 }\cdot B_{ 2 }_{ 1 }+A_{ 2 }_{ 3 }\cdot B_{ 3 }_{ 1 }\quad  & A_{ 2 }_{ 1 }\cdot B_{ 1 }_{ 2 }+A_{ 2 }_{ 2 }\cdot B_{ 2 }_{ 2 }+A_{ 2 }_{ 3 }\cdot B_{ 3 }_{ 2 } \end{pmatrix}$$
 
 이 경우 BA는 성립하지 않습니다.
