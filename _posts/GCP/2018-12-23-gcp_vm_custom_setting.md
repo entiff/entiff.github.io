@@ -3,7 +3,7 @@ layout: post
 title:  "Google Cloud Platform(GCP)에서 아나콘다, 주피터 노트북, 가상환경 설치 및 설정"
 date:   2018-12-04 21:00:00
 author: entiff
-categories: Python
+categories: GCP
 ---
 
 ## 들어가기 전
@@ -306,7 +306,7 @@ python -m ipykernel install --user --name entiff --display-name "pytorch"
 
 
 ![GCP16](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp16.PNG?raw=true)
-  
+
 
 이번 글에서는 GCP VM에 아나콘다, 주피터 노트북 설치 그리고 가상환경 커널 추가에 대해서 알아보았습니다. 이후에는 본인이 원하는 버전의 라이브러리를 설치해 사용하면 됩니다.
 
