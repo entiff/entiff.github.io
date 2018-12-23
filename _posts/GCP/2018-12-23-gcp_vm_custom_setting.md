@@ -225,7 +225,7 @@ URL을 복사하고 port number의 콜론(:)앞에 external ip address를 입력
 
 이제 vm instance에서 원하는 패키지를 설치하고 사용하시면 됩니다.
 
-## jupyter notebook kernel 추가
+## Jupyter notebook kernel 추가
 
 프로젝트마다 vm을 생성해 위와 같은 과정을 반복하면 시간이 매우 오래걸립니다.
 
