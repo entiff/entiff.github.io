@@ -11,6 +11,9 @@ categories: Python
 GCP에서는 이미 tensorflow와 pytorch 최신버전 그리고 이에 맞는 CUDA, cuDNN가 설치된 이미지를 배포하고 있습니다. Boot disk 설정에서 OS images를 보면 현재(18.12.23) pytorch 1.0.0/cuda 10.0, tensorflow 1.12.0/cuda10.0 이미지 등이 있습니다. 그리고 instance를 켜놓는 동안 계속 과금이 됩니다. 따라서, 로컬에서 테스트를 미리 해보고 GCP에서 jupyter notebook을 사용하는 것이 좋습니다. 그리고 **작업이 끝난 뒤에는 반드시 instance를 꺼야 합니다.** 사용하지 않는 동안 instance를 계속 켜두면 요금 폭탄을 맞을 수 있습니다.
 
 이번 글은 GCP에서 본인이 원하는 OS image가 없는 분, jupyter notebook을 사용하고자 하는 분들을 위해 작성합니다.
+GCP가 한글로 나와서 글의 내용을 따라가기 어려우신 분들은 `User preferences - Language & region`에서 Language를 영어로 바꾸면 됩니다.
+
+그럼 시작하겠습니다.
 
 ## VM(Virutal Machine) 생성하기
 
@@ -42,6 +45,7 @@ GCP에서는 이미 tensorflow와 pytorch 최신버전 그리고 이에 맞는 C
 
 
 ![GCP5](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp5.PNG?raw=true)
+
 
 밑으로 내려가서 Firewall에 Allow HTTP traffic, Allow HTTPS traffic에 체크합니다. Disks 옵션에서 Delete boot disk when instance is deleted를 해제해 instance를 지우더라도 disk를 지우지 않도록 설정합니다.
 
@@ -302,6 +306,12 @@ python -m ipykernel install --user --name entiff --display-name "pytorch"
 
 
 ![GCP16](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp16.PNG?raw=true)
-
+  
 
 이번 글에서는 GCP VM에 아나콘다, 주피터 노트북 설치 그리고 가상환경 커널 추가에 대해서 알아보았습니다. 이후에는 본인이 원하는 버전의 라이브러리를 설치해 사용하면 됩니다.
+
+
+### 참고 자료
+
+- [Running Jupyter Notebook on Google Cloud Platform in 15 min](https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52)
+- [jupyter notebook에 가상환경 kernel 추가하기](https://medium.com/@5eo1ab/jupyter-notebook%EC%97%90-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-kernel-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0-ed5261a7e0e6)
