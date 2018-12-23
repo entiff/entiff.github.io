@@ -93,7 +93,7 @@ Ephemeral(임시)를 static(고정)으로 변경합니다.
 ![GCP10](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp10.PNG?raw=true)
 
 
-[Cloud Shell](https://cloud.google.com/shell/docs/) 또는 Google Cloud Sdk로 instance에 접속할 수 있습니다. Google Cloud SDK로 접속하겠습니다.
+[Cloud Shell](https://cloud.google.com/shell/docs/) 또는 Google Cloud SDK로 instance에 접속할 수 있습니다. 이번에는 Google Cloud SDK로 접속하겠습니다.
 
 ## Google Cloud SDK 설치
 
