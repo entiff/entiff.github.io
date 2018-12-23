@@ -55,11 +55,11 @@ GCP가 한글로 나와서 글의 내용을 따라가기 어려우신 분들은 
 
 예시 VM 설정은 다음과 같습니다.
 
-**Name: instance-101**  
-**Region: us-west1**  
-**Zone: us-west1-b**  
-**Machine type: 8 vCPU, 30GB memory, 1 GPU(Tesla K80)**  
-**Boot dist: Ubuntu 16.04**
+- **Name: instance-101**  
+- **Region: us-west1**  
+- **Zone: us-west1-b**  
+- **Machine type: 8 vCPU, 30GB memory, 1 GPU(Tesla K80)**  
+- **Boot disk: Ubuntu 16.04**
 
 이제 IP와 방화벽 설정을 해야 합니다.
 
