@@ -17,43 +17,31 @@ GCP가 한글로 나와서 글의 내용을 따라가기 어려우신 분들은 
 
 ## VM(Virutal Machine) 생성하기
 
-[GCP](https://cloud.google.com/)에 접속해 `go to console`을 클릭합니다.
+[GCP](https://cloud.google.com/)에 접속해 `go to console`을 클릭합니다.  
 
+![GCP1](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp1.PNG?raw=true)  
 
-![GCP1](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp1.PNG?raw=true)
+프로젝트를 원하는 이름으로 설정하고 `NEW PROJECT`를 누릅니다.  
 
+![GCP2](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp2.PNG?raw=true)  
 
-프로젝트를 원하는 이름으로 설정하고 `NEW PROJECT`를 누릅니다.
+이제 `Compute Engine - VM instances`를 눌러 VM 관리창으로 들어갑니다.  
 
+![GCP3](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp3.PNG?raw=true)  
 
-![GCP2](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp2.PNG?raw=true)
+`Create an instance`를 누르면 다음과 같은 창이 뜹니다. 밑줄 친 부분을 원하는 설정으로 변경합니다.  
 
+![GCP4](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp4.PNG?raw=true)  
 
-이제 `Compute Engine - VM instances`를 눌러 VM 관리창으로 들어갑니다.
+`Customize`를 누르면 다음과 같은 창 뜨고 표시된 부분을 원하는 설정으로 변경합니다.  
 
+![GCP5](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp5.PNG?raw=true)  
 
-![GCP3](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp3.PNG?raw=true)
+밑으로 내려가서 Firewall에 Allow HTTP traffic, Allow HTTPS traffic에 체크합니다. Disks 옵션에서 Delete boot disk when instance is deleted를 해제해 instance를 지우더라도 disk를 지우지 않도록 설정합니다.  
 
+![GCP6](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp6.PNG?raw=true)  
 
-`Create an instance`를 누르면 다음과 같은 창이 뜹니다. 밑줄 친 부분을 원하는 설정으로 변경합니다.
-
-
-![GCP4](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp4.PNG?raw=true)
-
-
-`Customize`를 누르면 다음과 같은 창 뜨고 표시된 부분을 원하는 설정으로 변경합니다.
-
-
-![GCP5](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp5.PNG?raw=true)
-
-
-밑으로 내려가서 Firewall에 Allow HTTP traffic, Allow HTTPS traffic에 체크합니다. Disks 옵션에서 Delete boot disk when instance is deleted를 해제해 instance를 지우더라도 disk를 지우지 않도록 설정합니다.
-
-
-![GCP6](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp6.PNG?raw=true)
-
-
-예시 VM 설정은 다음과 같습니다.
+예시 VM 설정은 다음과 같습니다.  
 
 - **Name: instance-101**  
 - **Region: us-west1**  
@@ -63,35 +51,25 @@ GCP가 한글로 나와서 글의 내용을 따라가기 어려우신 분들은 
 
 이제 IP와 방화벽 설정을 해야 합니다.
 
-우선 IP 설정을 먼저 합니다. `VPC network - External IP addresses`로 들어갑니다.
+우선 IP 설정을 먼저 합니다. `VPC network - External IP addresses`로 들어갑니다.  
 
+![GCP7](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp7.PNG?raw=true)  
 
-![GCP7](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp7.PNG?raw=true)
+Ephemeral(임시)를 static(고정)으로 변경합니다.  
 
+![GCP8](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp8.PNG?raw=true)  
 
-Ephemeral(임시)를 static(고정)으로 변경합니다.
+이제 방화벽 설정을 하러 `VPC network - Firewall rules`로 들어갑니다.  
 
+![GCP9](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp9.PNG?raw=true)  
 
-![GCP8](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp8.PNG?raw=true)
+`Create Firewall Rule`을 누르면 다음과 같은 창이 뜹니다. 여기서 Source IP ranges에 `0.0.0.0/0`, Protocols and ports에는 Specified protocols and ports, tcp를 선택하고 원하는 1~4 자릿수의 port number를 설정합니다. 이미 있는 ports는 피해서 설정합니다.  
 
+![GCP11](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp11.PNG?raw=true)  
 
-이제 방화벽 설정을 하러 `VPC network - Firewall rules`로 들어갑니다.
+설정이 모두 끝났습니다. instance에 접속합니다. `Compute Engine - VM instances`로 들어가 instance를 켭니다.  
 
-
-![GCP9](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp9.PNG?raw=true)
-
-
-`Create Firewall Rule`을 누르면 다음과 같은 창이 뜹니다. 여기서 Source IP ranges에 `0.0.0.0/0`, Protocols and ports에는 Specified protocols and ports, tcp를 선택하고 원하는 1~4 자릿수의 port number를 설정합니다. 이미 있는 ports는 피해서 설정합니다.
-
-
-![GCP11](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp11.PNG?raw=true)
-
-
-설정이 모두 끝났습니다. instance에 접속합니다. `Compute Engine - VM instances`로 들어가 instance를 켭니다.
-
-
-![GCP10](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp10.PNG?raw=true)
-
+![GCP10](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp10.PNG?raw=true)  
 
 [Cloud Shell](https://cloud.google.com/shell/docs/) 또는 Google Cloud SDK로 instance에 접속할 수 있습니다. 이번에는 Google Cloud SDK로 접속하겠습니다.
 
@@ -104,11 +82,9 @@ window 환경에서 Google Cloud SDK 설치는 [이곳](https://cloud.google.com
 Google Cloud SDK를 실행하고 `gcloud compute ssh [instance name]`로 instance에 접속합니다. 저는 instance-101이라는 이름으로 만들었기 때문에 `gcloud compute ssh instance-101`로 접속합니다.
 
 처음 instance에 접속할 때 registry key를 등록하라는 문구가 뜹니다. 가볍게 '예'를 누릅니다.
-성공적으로 접속하면 다음과 같이 뜹니다.
+성공적으로 접속하면 다음과 같이 뜹니다.  
 
-
-![GCP12](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp12.PNG?raw=true)
-
+![GCP12](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp12.PNG?raw=true)  
 
 ## Anaconda 설치
 
@@ -204,11 +180,9 @@ ls ~/.jupyter/jupyter_notebook_config.py
 vi ~/.jupyter/jupyter_notebook_config.py
 ```
 
-그러면 다음과 같은 화면이 뜹니다.
+그러면 다음과 같은 화면이 뜹니다.  
 
-
-![GCP13](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp13.PNG?raw=true)
-
+![GCP13](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp13.PNG?raw=true)  
 
 i를 누르면 화면 아래에 --INSERT--라고 뜨며 편집모드로 들어갑니다.
 이제 다음과 같이 입력합니다.
@@ -245,11 +219,9 @@ jupyter-notebook --no-browser --port=101
 
 URL을 복사하고 port number의 콜론(:)앞에 external ip address를 입력하고 접속합니다.
 
-다음과 같이 jupyter가 실행되면 성공한 것입니다.
+다음과 같이 jupyter가 실행되면 성공한 것입니다.  
 
-
-![GCP14](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp14.PNG?raw=true)
-
+![GCP14](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp14.PNG?raw=true)  
 
 이제 vm instance에서 원하는 패키지를 설치하고 사용하시면 됩니다.
 
@@ -281,11 +253,9 @@ conda activate entiff`
 
 비활성화는 `conda deactivate`입니다.
 
-다음 그림과 같이 본인이 생성한 가상환경 이름이 인스턴스 옆에 보이면 성공적으로 가상환경이 활성화된 것 입니다.
+다음 그림과 같이 본인이 생성한 가상환경 이름이 인스턴스 옆에 보이면 성공적으로 가상환경이 활성화된 것 입니다.  
 
-
-![GCP15](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp15.PNG?raw=true)
-
+![GCP15](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp15.PNG?raw=true)  
 
 이제 가상환경에 jupyter notebook을 설치합니다.
 
@@ -302,11 +272,9 @@ python -m ipykernel install --user --name [VirtualEnv] --display-name "[KenrelNa
 python -m ipykernel install --user --name entiff --display-name "pytorch"
 ```
 
-이제 다시 jupyter notebook으로 접속해서 다음과 같이 추가된 커널을 확인할 수 있습니다.
+이제 다시 jupyter notebook으로 접속해서 다음과 같이 추가된 커널을 확인할 수 있습니다.  
 
-
-![GCP16](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp16.PNG?raw=true)
-
+![GCP16](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp16.PNG?raw=true)  
 
 이번 글에서는 GCP VM에 아나콘다, 주피터 노트북 설치 그리고 가상환경 커널 추가에 대해서 알아보았습니다. 이후에는 본인이 원하는 버전의 라이브러리를 설치해 사용하면 됩니다.
 
