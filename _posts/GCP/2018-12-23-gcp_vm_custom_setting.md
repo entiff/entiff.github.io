@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Cloud Platform(GCP)에서 아나콘다, 주피터 노트북, 가상환경 설정"
-date:   2018-12-04 21:00:00
+date:   2018-12-23 21:00:00
 author: entiff
 categories: GCP
 ---
