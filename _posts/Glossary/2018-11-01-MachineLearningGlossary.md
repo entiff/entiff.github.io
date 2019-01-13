@@ -6,13 +6,8 @@ author: entiff
 categories: Glossary
 ---
 
-머신러닝 알고리즘 용어 모음집을 작성 중입니다.  
-여러분들은 아래의 용어에 대해 모두 설명할 수 있으신가요?  
-아래의 용어들에 대해 모두 간단하고 쉽게 설명해보는 것을 목표로 공부하면 좋을 것 같습니다 :)  
-오타 혹은 오개념에 대해서는 댓글로 남겨주시면 감사하겠습니다.  
-지속적인 업데이트가 이루어지고 있습니다.  
-
-피드백은 언제나 환영입니다.
+머신러닝 알고리즘 용어 모음집을 작성 중입니다. 오타 혹은 오개념에 대해서는 댓글로 남겨주시면 감사하겠습니다.
+지속적인 업데이트가 이루어지고 있습니다. 피드백은 언제나 환영입니다 :)
 
 ## Methods
 
@@ -37,13 +32,9 @@ $$ y = { \beta  }_{ 1 }{ x }_{ 1i } + ... + { \beta  }_{ i }{ x }_{ ip } + \vare
 
 $${ h }_{ \theta  }(x)\quad =\quad \frac { 1 }{ 1\quad +\quad { e }^{ -{ \theta  }^{ T }x } }$$
 
-![로지스틱 함수](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/480px-Logistic-curve.svg.png){: width="200" height="300"}
-
 $$-\frac { 1 }{ m } [\sum _{ i=1 }^{ m }{ { y }^{ (i) }log{ h }_{ \theta  }({ x }^{ (i) })+(1-{ y }^{ (i) })log(1-{ h }_{ \theta  }({ x }^{ (i) }))] }$$
 
 ### 3. Support Vector Machine(SVM)
-
-![Cost function of SVM](http://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20[12].png)
 
 $$C\sum _{ i=1 }^{ m }{ [{ y }^{ (i) }{ cost }_{ 1 }({ \theta  }^{ T }{ x }^{ (i) })+(1-{ y }^{ (i) }{ cost }_{ 0 }{ \theta  }^{ T }{ x }^{ (i) })]\quad +\quad \frac { 1 }{ 2 } \sum _{ i=1 }^{ n }{ { \theta  }_{ j }^{ 2 } }  } $$
 
@@ -133,7 +124,7 @@ $${ f }_{ i } = similarity(x,{ l }^{ (i) }) = exp(\frac { \left\| x-{ l }^{ (i) 
 
 ### 7. ROC curve
 
-###### etc
+### etc
 - Markov Chain
 - Association Rule
   - Support

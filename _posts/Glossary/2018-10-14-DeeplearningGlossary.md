@@ -6,13 +6,8 @@ author: entiff
 categories: Glossary
 ---
 
-[DeepLearningGlossary](http://www.wildml.com/deep-learning-glossary/), 밑바닥부터 시작하는 딥러닝 등을 참고하여 딥러닝 용어 모음집을 작성 중입니다.  
-여러분들은 아래의 용어에 대해 모두 설명할 수 있으신가요?  
-아래의 용어들에 대해 모두 간단하고 쉽게 설명해보는 것을 목표로 공부하면 좋을 것 같습니다 :)  
-오타 혹은 오개념에 대해서는 댓글로 남겨주시면 감사하겠습니다.  
-지속적인 업데이트가 이루어지고 있습니다.  
-
-피드백은 언제나 환영입니다.
+[DeepLearningGlossary](http://www.wildml.com/deep-learning-glossary/), 밑바닥부터 시작하는 딥러닝 등을 참고하여 딥러닝 용어 모음집을 작성 중입니다. 오타 혹은 오개념에 대해서는 댓글로 남겨주시면 감사하겠습니다. 지속적인 업데이트가 이루어지고 있습니다.  
+피드백은 언제나 환영입니다 :)
 
 ## 1. Neural Net(신경망)
 
@@ -142,10 +137,9 @@ categories: Glossary
 * [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)(the Stanford Question Answering Dataset)
 * [Alexa Prize Competition](https://developer.amazon.com/alexaprize)
 
-다음 용어들에 대해서는 분류 및 설명 작업이 진행 중입니다.
-
-Affine Layer  
-Highway Layer  
-Neural Turing Machine  
-Noise-contrastive estimation(NCE)  
-Restricted Boltzmann Machine(RBN)
+### etc
+- Affine Layer  
+- Highway Layer  
+- Neural Turing Machine  
+- Noise-contrastive estimation(NCE)  
+- Restricted Boltzmann Machine(RBN)
