@@ -79,9 +79,9 @@ $$ J(\theta )=\frac { 1 }{ 2m } \left[ \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({
 
 이 경우 theta는 다음과 같이 업데이트 됩니다.
 
-$$ { \theta  }_{ 0 }\quad :=\quad { \theta  }_{ 0 }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ 0 }^{ (i) }\quad $$
+$$ { \theta  }_{ 0 } := { \theta  }_{ 0 }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ 0 }^{ (i) }\quad $$
 
-$$ { \theta  }_{ j }\quad :=\quad { \theta  }_{ j }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ j }^{ (i) }-\quad 2\lambda { \theta  }_{ j } $$
+$$ { \theta  }_{ j } := { \theta  }_{ j }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ j }^{ (i) }-\quad 2\lambda { \theta  }_{ j } $$
 
 reg term을 2m으로 나누어 대괄호 안에 들어가더라도 상관없습니다. 다만 그 경우에 최적의 람다값이 4m배 차이나게 됩니다.
 
