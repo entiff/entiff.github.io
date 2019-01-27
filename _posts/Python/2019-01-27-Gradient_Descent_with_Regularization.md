@@ -118,3 +118,6 @@ L2의 가중치 변화입니다.
 가중치들이 0에 가깝지만 대부분 0이 아닌 값을 갖고 있습니다.
 
 이처럼 L1과 L2는 서로 다른 효과를 나타냅니다. 일반적으로 L1은 sparse solution을 유도합니다. 일부의 feature만으로 solution을 찾는 것입니다. 반대로 L2는 영향력이 낮은 feature를 유지하고 이를 통해 더 좋은 solution을 찾고자 합니다.
+
+- Reference
+  - 고려대 주재걸 교수님 [강의](https://www.youtube.com/watch?v=W-93giPwZnk&list=PLep-kTP3NkcNQ6kVMzAYhp3atuo2kCp2B&index=5)
