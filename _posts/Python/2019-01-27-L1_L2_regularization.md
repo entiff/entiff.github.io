@@ -8,9 +8,9 @@ categories: Python
 
 Machine Learning에서 과적합(Overfitting) 문제를 해결하는 방법에는 여러가지가 있습니다.
 
-첫번째 선택지는 모델이 훈련하는 데이터의 양을 늘리는 것입니다. 가장 확실한 방법이지만 시간과 비용이 많이 든다는 단점이 있습니다.
-두번째 선택지는 모델의 feature 개수를 줄이는 것입니다. model selection 알고리즘을 이용하거나 종속변수와 상관이 낮은 feature를 직접 제거할 수도 있습니다.
-세번째 선택지는 Regularization입니다. 최소화하고자 하는 Loss function에 Regularization term을 더합니다. 이때의 Regularization term은 L1, L2, Elastic net 정도가 있습니다.
+첫번째는 모델이 훈련하는 데이터의 양을 늘리는 것입니다. 가장 확실한 방법이지만 시간과 비용이 많이 든다는 단점이 있습니다.
+두번째는 모델의 feature 개수를 줄이는 것입니다. model selection 알고리즘을 이용하거나 종속변수와 상관이 낮은 feature를 직접 제거할 수도 있습니다.
+세번째는 Regularization입니다. 최소화하고자 하는 Loss function에 Regularization term을 더합니다. 이때의 Regularization term은 L1, L2, Elastic net 정도가 있습니다.
 
 이번 글에서는 L1과 L2 regularization의 차이를 gradient 관점에서 해석해보고자 합니다.
 
@@ -61,7 +61,7 @@ def Gradientdescent(X, y, theta_start):
         theta = theta - learningrate*error
 ```
 
-theta가 0보다 큰 경우 reg term은 lamba가 되고 0보다 작은 경우에는 -lambda가 됩니다. 이러한 성질은 $$$ y=\left| x \right| $$$ 그래프의 미분을 생각해보면 간단합니다.
+theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우에는 `-lambda`가 됩니다. 이러한 성질은 $ y=\left| x \right| $ 그래프의 미분을 생각해보면 간단합니다.
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png)
 
@@ -91,15 +91,15 @@ def Gradientdescent(X, y, theta_start):
         theta = theta - learningrate*error
 ```
 
-L2 reg term에서는 theta의 크기에 상관없이 2*lambda*theta가 loss에 추가됩니다.
+L2 reg term에서는 theta의 크기에 상관없이 `2 x lambda x theta`가 loss에 추가됩니다.
 
 Gradient 관점에서 L1과 L2를 비교하면, L1은 theta의 부호에 따라 lambda를 더하거나 빼주고
-L2는 해당 theta에 2*lambda가 곱해져서 더해집니다. 이에 따라 L1은 theta에 일정한 크기(lambda)로 영향을 주고
+L2는 해당 theta에 `2 x lambda`가 곱해져서 더해집니다. 이에 따라 L1은 theta에 일정한 크기(lambda)로 영향을 주고
 L2는 theta가 작아지면 조금 더해지고 theta가 클수록 많이 더해집니다. 이를 시각화 하면 다음과 같습니다.
 
 ![L1L2](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/L1L2.png?raw=true)
 
-L1과 L2 모두 regularization을 위해 theta를 0으로 보내고자 합니다. 그러나, L1의 경우 theta의 크기에 상관없이
+L1과 L2 모두 regularization 효과로 theta를 0으로 보내고자 합니다. 그러나, L1의 경우 theta의 크기에 상관없이
 일정한 힘으로 0 방향으로 theta를 이동시킵니다. 반면, L2의 경우 theta의 크기가 작아질수록 0으로 theta를 이동시키는 힘이
 약해집니다. 이러한 차이로 L1은 많은 feature들의 가중치를 0으로 만들고 L2는 0으로 만들지 않고 0보다 아주 가까운 값으로 만듭니다.
 
