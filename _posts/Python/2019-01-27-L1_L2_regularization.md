@@ -61,7 +61,7 @@ def Gradientdescent(X, y, theta_start):
         theta = theta - learningrate*error
 ```
 
-theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우에는 `-lambda`가 됩니다. 이러한 성질은 $ y=\left| x \right| $ 그래프의 미분을 생각해보면 간단합니다.
+theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우에는 `-lambda`가 됩니다. 이러한 성질은 `y= |x|` 그래프의 미분을 생각해보면 간단합니다.
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png)
 
