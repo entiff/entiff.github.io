@@ -67,7 +67,7 @@ def Gradientdescent(X, y, theta_start):
 
 theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우에는 `-lambda`가 됩니다. 이러한 성질은 `y= |x|` 그래프의 미분을 생각해보면 간단합니다.
 
-![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png)
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png){: width="300" height="300"}
 
 0보다 클 때의 기울기는 1, 작을 때의 기울기는 0입니다.
 
