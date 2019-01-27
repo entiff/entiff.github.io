@@ -14,6 +14,8 @@ Machine Learning에서 과적합(Overfitting) 문제를 해결하는 방법에�
 
 이번 글에서는 L1과 L2 regularization의 차이를 gradient 관점에서 해석해보고자 합니다.
 
+## Linear Regression with Gradient Descent
+
 선형회귀식의 Loss function은 다음과 같습니다.
 
 $$ J(\theta )=\frac { 1 }{ 2m } \left[ \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }{ ) }^{ 2 } }  \right]  $$
@@ -35,6 +37,8 @@ def Gradientdescent(X, y, theta_start):
         error = (1/len(X))*np.sum((h(theta,X)-y).reshape(-1,1)*X,axis=0)
         theta = theta - learningrate*error
 ```
+
+## Linear Regression with Gradient Descent + L1 regularization
 
 기존 Loss에 L1 regularization term을 추가하면 다음과 같습니다.
 
@@ -66,6 +70,8 @@ theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우�
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Absolute_value.svg/330px-Absolute_value.svg.png)
 
 0보다 클 때의 기울기는 1, 작을 때의 기울기는 0입니다.
+
+## Linear Regression with Gradient Descent + L2 regularization
 
 이번에는 L2 reg term을 추가해보겠습니다. 새롭게 정의된 Loss function은 다음과 같습니다.
 
@@ -119,5 +125,5 @@ L2의 가중치 변화입니다.
 
 이처럼 L1과 L2는 서로 다른 효과를 나타냅니다. 일반적으로 L1은 sparse solution을 유도합니다. 일부의 feature만으로 solution을 찾는 것입니다. 반대로 L2는 영향력이 낮은 feature를 유지하고 이를 통해 더 좋은 solution을 찾고자 합니다.
 
-- Reference
-  * 고려대 주재걸 교수님 [강의](https://www.youtube.com/watch?v=W-93giPwZnk&list=PLep-kTP3NkcNQ6kVMzAYhp3atuo2kCp2B&index=5)
+#### Reference
+  - 고려대 주재걸 교수님 [강의](https://www.youtube.com/watch?v=W-93giPwZnk&list=PLep-kTP3NkcNQ6kVMzAYhp3atuo2kCp2B&index=5)
