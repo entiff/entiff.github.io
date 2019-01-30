@@ -81,7 +81,7 @@ $$ J(\theta )=\frac { 1 }{ 2m } \left[ \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({
 
 $$ { \theta  }_{ 0 } := { \theta  }_{ 0 }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ 0 }^{ (i) }\quad $$
 
-$$ { \theta  }_{ j } := { \theta  }_{ j }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ j }^{ (i) }- \lambda { \theta  }_{ j } $$
+$$ { \theta  }_{ j } := { \theta  }_{ j }-\alpha \frac { 1 }{ m } \sum _{ i=1 }^{ m }{ ({ h }_{ \theta  }({ x }^{ (i) })-{ y }^{ (i) }) } { x }_{ j }^{ (i) }- 2\lambda { \theta  }_{ j } $$
 
 reg term을 2m으로 나누어 대괄호 안에 들어가더라도 상관없습니다. 다만 그 경우에 최적의 람다값이 2m배 차이나게 됩니다.
 
@@ -93,14 +93,14 @@ def Gradientdescent(X, y, theta_start):
     for meaningless in range(iterations):
 
         error = np.zeros(5)
-        error = (1/len(X))*np.sum((h(theta,X)-y).reshape(-1,1)*X,axis=0) + lambda*theta
+        error = (1/len(X))*np.sum((h(theta,X)-y).reshape(-1,1)*X,axis=0) + 2*lambda*theta
         theta = theta - learningrate*error
 ```
 
 L2 reg term에서는 theta의 크기에 상관없이 `lambda x theta`가 loss에 추가됩니다.
 
 Gradient 관점에서 L1과 L2를 비교하면, L1은 theta의 부호에 따라 lambda를 더하거나 빼주고
-L2는 해당 theta에 `lambda`가 곱해져서 더해집니다. 이에 따라 L1은 theta에 일정한 크기(lambda)로 영향을 주고
+L2는 해당 theta에 `2*lambda`가 곱해져서 더해집니다. 이에 따라 L1은 theta에 일정한 크기(lambda)로 영향을 주고
 L2는 theta가 작아지면 절대값이 작아지고 theta가 클수록 절대값이 커집니다. 이를 시각화 하면 다음과 같습니다.
 
 ![L1L2](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/L1L2.png?raw=true)
