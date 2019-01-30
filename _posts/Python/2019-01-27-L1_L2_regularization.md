@@ -101,7 +101,7 @@ L2 reg term에서는 theta의 크기에 상관없이 `lambda x theta`가 loss에
 
 Gradient 관점에서 L1과 L2를 비교하면, L1은 theta의 부호에 따라 lambda를 더하거나 빼주고
 L2는 해당 theta에 `lambda`가 곱해져서 더해집니다. 이에 따라 L1은 theta에 일정한 크기(lambda)로 영향을 주고
-L2는 theta가 작아지면 조금 더해지고 theta가 클수록 많이 더해집니다. 이를 시각화 하면 다음과 같습니다.
+L2는 theta가 작아지면 절대값이 작아지고 theta가 클수록 절대값이 커집니다. 이를 시각화 하면 다음과 같습니다.
 
 ![L1L2](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/L1L2.png?raw=true)
 
