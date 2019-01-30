@@ -14,7 +14,7 @@ Machine Learning에서 **과적합(Overfitting)** 문제를 해결하는 방법�
 
 이번 글에서는 L1과 L2 regularization의 차이를 gradient 관점에서 해석해보고자 합니다.
 
-## 1. Linear Regression with Gradient Descent
+### Linear Regression with Gradient Descent
 
 선형회귀식의 Loss function은 다음과 같습니다.
 
@@ -38,7 +38,7 @@ def Gradientdescent(X, y, theta_start):
         theta = theta - learningrate*error
 ```
 
-## 2. Gradient Descent with L1 regularization
+### Gradient Descent with L1 regularization
 
 기존 Loss에 L1 regularization term을 추가하면 다음과 같습니다.
 
@@ -71,7 +71,7 @@ theta가 0보다 큰 경우 reg term은 `lamba`가 되고 0보다 작은 경우�
 
 0보다 클 때의 기울기는 1, 작을 때의 기울기는 0입니다.
 
-## 3. Gradient Descent with L2 regularization
+### Gradient Descent with L2 regularization
 
 이번에는 L2 reg term을 추가해보겠습니다. 새롭게 정의된 Loss function은 다음과 같습니다.
 

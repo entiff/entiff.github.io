@@ -6,7 +6,7 @@ author: entiff
 categories: GCP
 ---
 
-## 들어가기 전
+### 들어가기 전
 
 GCP에서는 이미 tensorflow와 pytorch 최신버전 그리고 이에 맞는 CUDA, cuDNN가 설치된 이미지를 배포하고 있습니다. Boot disk 설정에서 OS images를 보면 현재(18.12.23) pytorch 1.0.0/cuda 10.0, tensorflow 1.12.0/cuda10.0 이미지 등이 있습니다. 그리고 instance를 켜놓는 동안 계속 과금이 됩니다. 따라서, 로컬에서 테스트를 미리 해보고 GCP에서 jupyter notebook을 사용하는 것이 좋습니다. 그리고 **작업이 끝난 뒤에는 반드시 instance를 꺼야 합니다.** 사용하지 않는 동안 instance를 계속 켜두면 요금 폭탄을 맞을 수 있습니다.
 
@@ -15,7 +15,7 @@ GCP가 한글로 나와서 글의 내용을 따라가기 어려우신 분들은 
 
 그럼 시작하겠습니다.
 
-## VM(Virutal Machine) 생성하기
+### VM(Virutal Machine) 생성하기
 
 [GCP](https://cloud.google.com/)에 접속해 `go to console`을 클릭합니다.  
 
@@ -73,11 +73,11 @@ Ephemeral(임시)를 static(고정)으로 변경합니다.
 
 [Cloud Shell](https://cloud.google.com/shell/docs/) 또는 Google Cloud SDK로 instance에 접속할 수 있습니다. 이번에는 Google Cloud SDK로 접속하겠습니다.
 
-## Google Cloud SDK 설치
+### Google Cloud SDK 설치
 
 window 환경에서 Google Cloud SDK 설치는 [이곳](https://cloud.google.com/sdk/docs/quickstart-windows)을 참고했습니다. installer를 다운받아 설치하고 gcloud init를 입력합니다. 나머지 설정은 문서에 따라 차례차례 입력합니다.
 
-## Google Cloud SDK로 instance에 접속
+### Google Cloud SDK로 instance에 접속
 
 Google Cloud SDK를 실행하고 `gcloud compute ssh [instance name]`로 instance에 접속합니다. 저는 instance-101이라는 이름으로 만들었기 때문에 `gcloud compute ssh instance-101`로 접속합니다.
 
@@ -86,7 +86,7 @@ Google Cloud SDK를 실행하고 `gcloud compute ssh [instance name]`로 instanc
 
 ![GCP12](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/gcp12.PNG?raw=true)  
 
-## Anaconda 설치
+### Anaconda 설치
 
 이제 아나콘다를 깔아봅시다.
 `https://repo.continuum.io/archive/` 여기서 본인의 instance os에 맞는 최신 버전 아나콘다 링크 주소를 복사합니다.
@@ -160,7 +160,7 @@ VSCode를 설치할지 묻고 있습니다. no를 입력합니다.
 
 `source ~/.bashrc` 라고 입력하면 드디어 gcp instance에 아나콘다 설치가 끝납니다.
 
-## Jupyter Notebook 설치
+### Jupyter Notebook 설치
 
 이제 instance에서 주피터 노트북을 실행할 수 있도록 간단한 설정을 해보겠습니다.
 
@@ -225,7 +225,7 @@ URL을 복사하고 port number의 콜론(:)앞에 external ip address를 입력
 
 이제 vm instance에서 원하는 패키지를 설치하고 사용하시면 됩니다.
 
-## Jupyter notebook kernel 추가
+### Jupyter notebook kernel 추가
 
 프로젝트마다 vm을 생성해 위와 같은 과정을 반복하면 시간이 매우 오래걸립니다.
 
@@ -279,7 +279,7 @@ python -m ipykernel install --user --name entiff --display-name "pytorch"
 이번 글에서는 GCP VM에 아나콘다, 주피터 노트북 설치 그리고 가상환경 커널 추가에 대해서 알아보았습니다. 이후에는 본인이 원하는 버전의 라이브러리를 설치해 사용하면 됩니다.
 
 
-### 참고 자료
+#### 참고 자료
 
 - [Running Jupyter Notebook on Google Cloud Platform in 15 min](https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52)
 - [jupyter notebook에 가상환경 kernel 추가하기](https://medium.com/@5eo1ab/jupyter-notebook%EC%97%90-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-kernel-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0-ed5261a7e0e6)
