@@ -32,9 +32,9 @@ Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. �
 
 대중적인 guideline은 다음과 같습니다.
 
-- 1. 경험적으로 중요한 hyper-parameter를 먼저 탐색하고 값을 고정합니다.
-- 2. 덜 중요한 hyper-parameter를 나중에 탐색합니다.  
-- 3. 먼저 넓은 범위에 대해 hyper-parameter를 탐색하고 좋은 결과가 나온 범위에서 다시 탐색합니다.
+1. 경험적으로 중요한 hyper-parameter를 먼저 탐색하고 값을 고정합니다.
+2. 덜 중요한 hyper-parameter를 나중에 탐색합니다.  
+3. 먼저 넓은 범위에 대해 hyper-parameter를 탐색하고 좋은 결과가 나온 범위에서 다시 탐색합니다.
 
 ### Conclusion
 
