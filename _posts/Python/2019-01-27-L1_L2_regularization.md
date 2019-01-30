@@ -6,11 +6,11 @@ author: entiff
 categories: Python
 ---
 
-Machine Learning에서 과적합(Overfitting) 문제를 해결하는 방법에는 여러가지가 있습니다.
+Machine Learning에서 **과적합(Overfitting)** 문제를 해결하는 방법에는 여러가지가 있습니다.
 
-첫번째는 모델이 훈련하는 데이터의 양을 늘리는 것입니다. 가장 확실한 방법이지만 시간과 비용이 많이 든다는 단점이 있습니다.
-두번째는 모델의 feature 개수를 줄이는 것입니다. model selection 알고리즘을 이용하거나 종속변수와 상관이 낮은 feature를 직접 제거할 수도 있습니다.
-세번째는 Regularization입니다. 최소화하고자 하는 Loss function에 Regularization term을 더합니다. 이때의 Regularization term은 L1, L2, Elastic net 정도가 있습니다.
+**첫번째** 는 모델이 훈련하는 데이터의 양을 늘리는 것입니다. 가장 확실한 방법이지만 시간과 비용이 많이 든다는 단점이 있습니다.
+**두번째** 는 모델의 feature 개수를 줄이는 것입니다. model selection 알고리즘을 이용하거나 종속변수와 상관이 낮은 feature를 직접 제거할 수도 있습니다.
+**세번째** 는 Regularization입니다. 최소화하고자 하는 Loss function에 Regularization term을 더합니다. 이때의 Regularization term은 L1, L2, Elastic net 정도가 있습니다.
 
 이번 글에서는 L1과 L2 regularization의 차이를 gradient 관점에서 해석해보고자 합니다.
 
@@ -27,7 +27,7 @@ $$ { \theta  }_{ j }:={ \theta  }_{ j }-\alpha \quad \left[ { \frac { 1 }{ m }  
 Python으로 작성하면 다음과 같습니다.
 
 ```
-# y = theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5
+# h(x) = theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5
 def Gradientdescent(X, y, theta_start):
     theta = theta_start
 
@@ -49,7 +49,7 @@ reg term을 2m으로 나누어 대괄호 안에 들어가더라도 상관없습�
 새로 정의된 loss로 gradient descent를 수행하면 다음과 같습니다.
 
 ```
-# y = theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5
+# h(x) = theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5
 def Gradientdescent(X, y, theta_start):
     theta = theta_start
 
