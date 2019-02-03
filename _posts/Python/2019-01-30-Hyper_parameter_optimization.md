@@ -18,7 +18,7 @@ categories: Python
 
 ![img](https://github.com/shwksl101/shwksl101.github.io/blob/master/images/randomvsgird.PNG?raw=true)
 
-Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. 반면, Random Search는 9개 지점을 탐색했습니다. 이처럼, hyper-parameter는 상대적 중요도가 서로 다르고 Random Search는 중요한 parameter를 더 많이 탐색할 수 있기 때문에 optimization하기에 유리합니다. 반면, Grid Search는 중요하지 않은 hyper-parameter를 너무 많이 탐색한다고 합니다.
+Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. 반면, Random Search는 9개 지점을 탐색했습니다. 이처럼, hyper-parameter는 상대적 중요도가 서로 다르고 Random Search는 중요한 parameter를 더 많이 탐색할 수 있기 때문에 최적화하기에 유리합니다. 반면, Grid Search는 중요하지 않은 hyper-parameter를 너무 많이 탐색한다고 합니다.
 
 실제로 논문에서는 Random Search가 더 적은 탐색 기회로 더 좋은 결과를 냈습니다.
 
@@ -30,7 +30,7 @@ Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. �
 
 그러나, 여전히 Grid Search는 많이 쓰이고 guideline을 개선하는 방식으로 사용되고 있는 것 같습니다.
 
-대중적인 guideline은 다음과 같습니다.
+대중적인 지침은 다음과 같습니다.
 
 1. 경험적으로 중요한 hyper-parameter를 먼저 탐색하고 값을 고정합니다.
 2. 덜 중요한 hyper-parameter를 나중에 탐색합니다.  
@@ -38,4 +38,4 @@ Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. �
 
 ### Conclusion
 
-위의 guideline은 Random Search에도 충분히 적용할 수 있어 앞으로의 연구에서는 Random Search가 더 많이 사용되지 않을까 생각합니다. Bayesian optimization 역시 impractical하다는 평이 있지만 [Practical bayesian optimization of machine learning](https://arxiv.org/pdf/1206.2944.pdf)과 같은 논문의 등장으로 Bayesian 기반의 optimization도 더 많이 사용될 것 같습니다.
+위의 지침은 Random Search에도 충분히 적용할 수 있어 앞으로의 연구에서는 Random Search가 더 많이 사용되지 않을까 생각합니다. Bayesian optimization 역시 비실용적이라는 평이 있지만 [Practical bayesian optimization of machine learning](https://arxiv.org/pdf/1206.2944.pdf)과 같은 논문의 등장으로 Bayesian 기반의 최적화도 더 많이 사용될 것 같습니다.
