@@ -3,7 +3,7 @@ layout: post
 title:  "Random Search vs Grid Search"
 date:   2019-01-30 21:00:00
 author: entiff
-categories: Python
+categories: ML/DL
 ---
 
 이번 글에서는 hyper-parameter 최적화에 대해 알아봅니다. 일반적인 parameter(weight)는 학습 과정에서 조정됩니다. 그러나 hyper-parameter(ex. Learning rate, Batch size 등)는 고정된 값으로 학습되며, 학습 이전에 우리가 지정해야 합니다. 데이터 셋마다 최적의 hyper-parameter가 다르고, 더 좋은 모델도 hyper-parameter 최적화 없이는 안좋은 결과를 얻기 때문에 hyper-parameter 최적화는 매우 중요합니다.
@@ -38,4 +38,4 @@ Grid Search는 중요한 hyper-parameter의 3개 지점을 탐색했습니다. �
 
 ### Conclusion
 
-위의 지침은 Random Search에도 충분히 적용할 수 있어 앞으로의 연구에서는 Random Search가 더 많이 사용되지 않을까 생각합니다. Bayesian optimization 역시 비실용적이라는 평이 있지만 [Practical bayesian optimization of machine learning](https://arxiv.org/pdf/1206.2944.pdf)과 같은 논문의 등장으로 Bayesian 기반의 최적화도 더 많이 사용될 것 같습니다.
+위의 지침은 Random Search에도 충분히 적용할 수 있어 앞으로의 연구에서는 Random Search가 더 많이 사용되지 않을까 생각합니다. Bayesian optimization 역시 비실용적이라는 평이 있지만 [Practical bayesian optimization of machine learning](https://arxiv.org/pdf/1206.2944.pdf)과 같은 논문의 등장으로 Bayesian 기반의 최적화도 한 때 굉장히 많은 인기를 얻었습니다. 최근 Hyper-parameter optimization이 빠르게 자동화되고 있는 만큼 연구자들의 엔지니어링 노가다는 점점 줄어들 것 같습니다.

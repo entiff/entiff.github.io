@@ -3,7 +3,7 @@ layout: post
 title:  "L1, L2 regularization 비교"
 date:   2019-01-27 21:00:00
 author: entiff
-categories: Python
+categories: ML/DL
 ---
 
 Machine Learning에서 **과적합(Overfitting)** 문제를 해결하는 방법에는 여러가지가 있습니다.
