@@ -44,7 +44,7 @@ $$cos(\theta )\quad =\quad \frac { (x_{ 1 }y_{ 1 }+x_{ 2 }y_{ 2 }+...+x_{ n }y_{
 
 Matrix(행렬)은 row(행)와 column(열)로 나타냅니다.
 
-$$A\quad =\quad \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}\in \quad { R }^{ 3x2 }$$
+$$A\quad =\quad \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}\in \quad { R }^{ 3 \times 2 }$$
 
 이때, {1,2}를 1행, {3,4}를 2행, {5,6}을 3행이라 합니다.
 {1,3,5}는 1열, {2,4,6}은 2열입니다.
@@ -54,7 +54,7 @@ $$A\quad =\quad \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}\in \quad {
 
 행벡터는 주로 transpose(전치)를 이용해 표현합니다.
 
-$$x^{ T }\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad =\quad \begin{pmatrix} x_{ 1 } & x_{ 2 } & \cdots  & x_{ n } \end{pmatrix}\in \quad { R }^{ 1xn }$$
+$$x^{ T }\quad =\quad \begin{pmatrix} x_{ 1 } \\ x_{ 2 } \\ \vdots  \\ x_{ n } \end{pmatrix}\quad =\quad \begin{pmatrix} x_{ 1 } & x_{ 2 } & \cdots  & x_{ n } \end{pmatrix}\in \quad { R }^{ 1 \times n }$$
 
 행과 열의 개수가 같은 경우 Square matrix(정방행렬), 다른 경우 Rectangular matrix(직사각행렬)라 합니다.
 
