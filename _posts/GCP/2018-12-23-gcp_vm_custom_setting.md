@@ -100,7 +100,7 @@ wget https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh
 `bash [파일]`를 실행하고 설치 순서에 따라 진행하면 됩니다.
 
 ```
-bash Anaconda3-5.3.1-Linux-x86 64.sh
+bash Anaconda3-5.3.1-Linux-x86_64.sh
 ```
 
 archive 뒤가 파일명입니다.
@@ -248,7 +248,7 @@ conda create --name entiff python=3.6
 conda activate [가상환경 이름]
 
 예시
-conda activate entiff`
+conda activate entiff
 ```
 
 비활성화는 `conda deactivate`입니다.
