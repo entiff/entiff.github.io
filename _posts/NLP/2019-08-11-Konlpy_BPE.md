@@ -169,6 +169,4 @@ bpe.load("./vocab.txt")
 
 ~~~
 
-#### References
-
-https://ndb796.tistory.com/18
+#### [Reference](https://ndb796.tistory.com/18)
